@@ -1,3 +1,8 @@
+# Dev/anfisa4friend/.gitignore
+static/
+.vscode/
+.idea/
+
 # vscode settings
 .vscode/
 

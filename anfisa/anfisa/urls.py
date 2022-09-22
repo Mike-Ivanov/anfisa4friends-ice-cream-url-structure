@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 # импорт include позволит использовать адреса, включенные в приложения
-from django.urls import include, path 
+from django.urls import include, path
 
-urlpatterns = [    
+urlpatterns = [
     # Сначала проверяем все пути, которые есть в приложении ice_cream
-    path('', include('ice_cream.urls')),
+    path('', include('ice_cream.urls', namespace='ice_cream')),
     path('admin/', admin.site.urls),
 ]
